@@ -97,7 +97,7 @@ RUN apt-get update \
     git\
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/Svdvoort/PrognosAIs_glioma.git \
+RUN git clone https://github.com/Frosorus/PrognosAIs_glioma.git \
     && cd PrognosAIs_glioma \
     && mv Data/brain_mask.nii.gz /DATA/ATLAS/ \
     && mkdir -p /DATA/MODEL/ \
