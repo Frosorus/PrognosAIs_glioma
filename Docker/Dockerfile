@@ -86,11 +86,7 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
 
 # Install prognosais
 
-RUN pip3 install --upgrade pip \
-    && apt-get update -y \
-    && apt-get update \
-    && apt-get install -y cmake \
-    && pip3 install --upgrade setuptools wheel
+RUN pip3 install --no-cache-dir SimpleITK==2.3.0
 
 RUN pip3 install --no-cache-dir prognosais==0.2.7
 
