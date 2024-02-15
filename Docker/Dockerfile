@@ -87,9 +87,8 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
 # Install prognosais
 
 RUN pip3 install --no-cache-dir SimpleITK==2.2.0
-
-RUN pip3 install --no-cache-dir tensorflow==2.15.0
-
+RUN pip3 install --no-cache-dir tensorflow==2.8.4
+RUN pip3 install --no-cache-dir tensorflow-addons==0.17.1
 RUN pip3 install --no-cache-dir prognosais==0.2.7
 
 ###############
