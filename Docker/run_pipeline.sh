@@ -52,6 +52,5 @@ python3 /get_predictions.py $prognosais_model_folder $registration_folder $predi
 
 mv $prediction_output_folder/Results $OUTPUT_FOLDER
 rm -r $OUTPUT_FOLDER/PSNET*
-rm -r $prediction_output_folder/Samples
 rm -r $prediction_output_folder/config.yml
 rm -r $prediction_output_folder/labels.txt
